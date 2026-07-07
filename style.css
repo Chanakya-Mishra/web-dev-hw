@@ -1,0 +1,178 @@
+
+*{
+    margin: 0px;
+}
+/* header */
+    .parent{
+        background-color: black;
+        height: 50px;
+        margin: 0px;
+    }
+    .child-1{
+        width: 400px;
+        float: left;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    .child-2{
+        float: right;
+        color: white;
+        width: 350px;
+        text-align: center;
+        padding-top: 15px;
+    
+    }
+    /* middle */
+    .q{
+        background-color: rgb(51, 104, 227);
+        height: 100px;
+        color: white;
+    }
+    .p1{ 
+        width: 300px;
+        margin: auto;
+        padding-top: 25px;
+    }
+    .p1 h2{
+        padding-left: 48px;
+    }
+    .child-3{
+        float: left;
+        color: white;
+    }
+    .child-3{
+        text-decoration: none;
+    }
+    .child-4 a{
+        padding-left: 10px;
+    }
+    .fix{
+        clear: both;
+    }
+    /* cards section */
+    .main{
+        height: 780px;
+        background-color: rgb(240, 239, 239);
+    }
+    .m1{
+        float: left;
+        height: 100%;
+        width: 350px;
+        padding-left: 20px;
+    }
+    .content{
+        margin-top: 49px;
+        height: 210px;
+        width: 220px;
+        margin-left: 120px;
+        background-color: white;
+        border-radius: 5px;
+        /* border: 2px solid black; */
+
+    }
+    .content p{
+        padding-bottom: 4px;
+        padding-top: 4px;
+        padding-left: 20px;
+        border-bottom: 0.1px solid rgb(205, 198, 198);
+    }
+    .content a{
+        text-decoration: none;
+        color: black;
+        padding-left: 20px;
+    }
+    /* cards */
+    .m2{
+        float: left;
+        height: 100%;
+        width: 1130px;
+        background-color: rgb(240, 239, 239);
+        
+    }
+    .m3{ 
+        height: 50%;
+        background-color: rgb(240, 239, 239);
+    } 
+    .m4{
+        height: 50%;
+        background: rgb(240, 239, 239);
+        margin-bottom: 50px;   
+    }
+    .card1{
+        height: 300px;
+        width: 300px;
+        float: left;
+        border-radius: 5px; 
+        margin-right:25px;
+        margin-top: 40px;
+        margin-left:45px;
+        background-color: white;
+    }
+    .card1 p{
+        margin: 0px;
+        padding: 0px;
+        margin-left: 13px;
+        margin-top: 5px;
+    }
+    .h{
+        font-size: 20px;
+        font-weight: bolder;
+    }
+    img{
+        height: 150px;
+        width: 300px;
+        border-radius: 5px;
+    }
+    button{
+        margin-left: 15px;
+        margin-top: 15px;
+        height: 30px;
+        background-color: blue;
+        color: white;
+    }
+    .f{
+        clear: both;
+    }
+
+    /* footer */
+    .det{
+        background-color: black;
+        height: 150px;
+    }
+
+    .det1{
+        color: white;
+        float: left;
+        width: 380px;
+        height: 100%;
+        margin-left: 30px;
+    }
+    .det1 h5{
+        margin-left: 50px;
+        width: 280px;
+        margin-top: 8px;
+        font-weight: lighter;
+        font-size: 14px;
+    }
+    .f{
+        margin-left: 50px;
+        font-size: 18px;
+        margin-top: 34px;
+        font-weight: bolder;
+    }
+
+    .det2{
+        float: left;
+        color: white;
+        width: 350px;
+        height: 100%;
+        margin-left: 15px;
+    }
+    .det2 h5{
+        margin-left: 50px;
+        margin-top: 3px;
+        font-weight: lighter;
+        font-size: 14px;
+    }
