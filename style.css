@@ -1,178 +1,224 @@
-
-*{
-    margin: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-/* header */
-    .parent{
-        background-color: black;
-        height: 50px;
-        margin: 0px;
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: rgb(240, 239, 239);
+    color: #333;
+}
+
+img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    margin: 15px 0 0 15px;
+    height: 36px;
+    padding: 0 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* --- Header Section --- */
+.parent {
+    background-color: black;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.child-1 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.child-2 {
+    color: white;
+    display: flex;
+    gap: 15px;
+}
+
+/* --- Sub-header Section --- */
+.q {
+    background-color: rgb(51, 104, 227);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p1 h2 {
+    font-size: 1.5rem;
+}
+
+.child-3 {
+    color: white;
+    text-decoration: none;
+}
+
+.child-4 a {
+    padding-left: 10px;
+}
+
+/* --- Main Layout Container --- */
+.main {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+    min-height: calc(100vh - 200px);
+}
+
+/* --- Sidebar Menu --- */
+.m1 {
+    flex: 0 0 250px;
+}
+
+.content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.content p {
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(205, 198, 198);
+}
+
+.content a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+}
+
+/* --- Main Content Cards Area --- */
+.m2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.m3, .m4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card1 {
+    background-color: white;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.card1 p {
+    margin: 8px 15px 0 15px;
+}
+
+.h {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* --- Footer Section --- */
+.det {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.det1, .det2 {
+    max-width: 350px;
+    width: 100%;
+}
+
+.det1 h5, .det2 h5 {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+
+.f {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   Responsive Media Queries
+   ========================================== */
+
+/* Tablets (Max width: 992px) */
+@media (max-width: 992px) {
+    .main {
+        flex-direction: column;
     }
-    .child-1{
-        width: 400px;
-        float: left;
-        color: white;
-        font-size: 20px;
-        padding: 10px;
-        margin-left: 30px;
+
+    .m1 {
+        flex: 0 0 100%;
     }
-    .child-2{
-        float: right;
-        color: white;
-        width: 350px;
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .m3, .m4 {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+/* Mobile Devices (Max width: 600px) */
+@media (max-width: 600px) {
+    .parent {
+        flex-direction: column;
         text-align: center;
-        padding-top: 15px;
-    
-    }
-    /* middle */
-    .q{
-        background-color: rgb(51, 104, 227);
-        height: 100px;
-        color: white;
-    }
-    .p1{ 
-        width: 300px;
-        margin: auto;
-        padding-top: 25px;
-    }
-    .p1 h2{
-        padding-left: 48px;
-    }
-    .child-3{
-        float: left;
-        color: white;
-    }
-    .child-3{
-        text-decoration: none;
-    }
-    .child-4 a{
-        padding-left: 10px;
-    }
-    .fix{
-        clear: both;
-    }
-    /* cards section */
-    .main{
-        height: 780px;
-        background-color: rgb(240, 239, 239);
-    }
-    .m1{
-        float: left;
-        height: 100%;
-        width: 350px;
-        padding-left: 20px;
-    }
-    .content{
-        margin-top: 49px;
-        height: 210px;
-        width: 220px;
-        margin-left: 120px;
-        background-color: white;
-        border-radius: 5px;
-        /* border: 2px solid black; */
-
-    }
-    .content p{
-        padding-bottom: 4px;
-        padding-top: 4px;
-        padding-left: 20px;
-        border-bottom: 0.1px solid rgb(205, 198, 198);
-    }
-    .content a{
-        text-decoration: none;
-        color: black;
-        padding-left: 20px;
-    }
-    /* cards */
-    .m2{
-        float: left;
-        height: 100%;
-        width: 1130px;
-        background-color: rgb(240, 239, 239);
-        
-    }
-    .m3{ 
-        height: 50%;
-        background-color: rgb(240, 239, 239);
-    } 
-    .m4{
-        height: 50%;
-        background: rgb(240, 239, 239);
-        margin-bottom: 50px;   
-    }
-    .card1{
-        height: 300px;
-        width: 300px;
-        float: left;
-        border-radius: 5px; 
-        margin-right:25px;
-        margin-top: 40px;
-        margin-left:45px;
-        background-color: white;
-    }
-    .card1 p{
-        margin: 0px;
-        padding: 0px;
-        margin-left: 13px;
-        margin-top: 5px;
-    }
-    .h{
-        font-size: 20px;
-        font-weight: bolder;
-    }
-    img{
-        height: 150px;
-        width: 300px;
-        border-radius: 5px;
-    }
-    button{
-        margin-left: 15px;
-        margin-top: 15px;
-        height: 30px;
-        background-color: blue;
-        color: white;
-    }
-    .f{
-        clear: both;
     }
 
-    /* footer */
-    .det{
-        background-color: black;
-        height: 150px;
+    .m3, .m4 {
+        grid-template-columns: 1fr;
     }
 
-    .det1{
-        color: white;
-        float: left;
-        width: 380px;
-        height: 100%;
-        margin-left: 30px;
-    }
-    .det1 h5{
-        margin-left: 50px;
-        width: 280px;
-        margin-top: 8px;
-        font-weight: lighter;
-        font-size: 14px;
-    }
-    .f{
-        margin-left: 50px;
-        font-size: 18px;
-        margin-top: 34px;
-        font-weight: bolder;
+    .det {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
     }
 
-    .det2{
-        float: left;
-        color: white;
-        width: 350px;
-        height: 100%;
-        margin-left: 15px;
+    .det1 h5, .det2 h5 {
+        margin-left: 0;
     }
-    .det2 h5{
-        margin-left: 50px;
-        margin-top: 3px;
-        font-weight: lighter;
-        font-size: 14px;
-    }
+}
